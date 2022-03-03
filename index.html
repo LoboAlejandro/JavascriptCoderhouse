@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/0eb3592e5d.js" crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <!--Titulo Pestaña-->
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav__div">
+                <a href="index.html" class="nav__div__a">
+                    <img class="div__a--imagen" src="image/logo.png" alt="Logo de empresa">
+                </a>
+                <form class="div__formBuscador">
+                    <input class="buscador" type="text" placeholder="Buscar por nombre del producto" autocomplete="off">
+                    <button class="btnBuscador" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="divs">
+                <div class="header__nav__carrito">
+                    <img class="carrito--imagen" src="image/shopping-cart.png" alt="">
+                </div>
+                <div class="header__nav__divUsuario">
+                    <div class="divUsuario__div">
+                        <i class="fas fa-caret-down"></i>
+                        <img class="divUsuario--imagen" src="image/usuario.png" alt="">
+                    </div>
+                    <div class="divUsuario__menu">
+                        <button class="menu__administrador">Menu Administrador</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="header__menu">
+            <h2>Simulador de Administrador</h2>
+            <article class="header__menu__modificar">
+                <div class="menu__modificar--agregar">
+                    <h3>Agregar:</h3>
+                    <form class="agregarProducto" action="">
+                        <label for="nombre">Producto:
+                            <input type="text" name="nombre" id="nombre" placeholder="Ingrese un nombre" autocomplete="off" required>
+                        </label>
+                        <label for="precio">Precio:
+                            <input type="number" name="precio" id="precio" placeholder="Ingrese el precio" autocomplete="off" required>
+                        </label>
+                        <label for="stock">Stock:
+                            <input type="number" name="stock" id="stock" placeholder="Ingrese el Stock" autocomplete="off" required>
+                        </label>
+                        <label for="">
+                            <input type="reset" name="reset" value="Limpiar" class="btnLimpiar">
+                            <input type="submit" name="Enviar" value="Agregar" class="btnAgregar">
+                        </label>
+                    </form>
+                </div>
+                <div class="menu__modificar--modificar">
+                    <h3>Modificar:</h3>
+                    <p>Dejar en blanco si no desea cambiar el valor</p>
+                    <form class="modificarProducto">
+                        <label for="modificar">ID:
+                            <input type="number" name="modificar" class="posicionModificar" placeholder="Ingrese ID del producto" autocomplete="off" required>
+                            <p class="modificarProducto--errorId">No existe el ID Ingresado</p>
+                        </label>
+                        <label for="modificarNombre">Nombre:
+                            <input type="text" name="modificarNombre" class="modificarNombre" placeholder="Nuevo nombre" autocomplete="off">
+                        </label>
+                        <label for="modificarPrecio">Precio:
+                            <input type="number" name="modificarPrecio" class="modificarPrecio" placeholder="Nuevo precio" autocomplete="off">
+                        </label>
+                        <label for="modificarStock">Stock:
+                            <input type="number" name="modificarStock" class="modificarStock" placeholder="Nuevo stock" autocomplete="off">
+                        </label>
+                        <label for="modificarOferta">Oferta:
+                            <input type="number" name="modificarOferta" class="modificarOferta" placeholder="Porcentaje sin %" autocomplete="off">
+                        </label>
+                        <label for="modificar">
+                            <input type="reset" name="modificar" value="Limpiar" class="btnLimpiar">
+                            <input type="submit" name="modificar" value="Modificar" class="btnModificar">
+                        </label>
+                    </form>
+                </div>
+                <div class="menu__modificar--eliminar">
+                    <h3>Eliminar:</h3>
+                    <form class="eliminarProducto">
+                        <label for="eliminar">ID:
+                            <input type="number" name="eliminar" class="posicion" placeholder="Ingrese ID del producto" autocomplete="off" required>
+                            <p class="eliminarProducto--errorId">No existe el ID Ingresado</p>
+                        </label>
+                        <label for="eliminar">
+                            <input type="submit" name="eliminar" value="Eliminar" class="btnEliminar">
+                        </label>
+                    </form>
+                </div>
+            </article>
+            <article class="header__botonera">
+                <p class="advertenciaGuardar">Para que los cambios surtan efecto, siempre se debe guardar.</p>
+                <p class="mensajeGuardar">¡Objetos guardados con éxito!</p>
+                <button name="cerrar" class="cerrar">Cerrar menú</button>
+                <button name="guardar" class="guardar">Guardar</button>
+            </article>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main__banner">
+            <h1 class="main__banner--titulo">Buscador de productos</h1>
+        </section>
+        <section class="main__productos">
+        </section>
+    </main>
+    <footer class="footer">
+        <a class="footer__a" href="https://www.linkedin.com/in/alejandrolobo97/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <h3 class="footer__a--texto">LinkedIn</h3>
+        </a>
+    </footer>
+    <script src="functions.js"></script>
+    <script src="carrito.js"></script>
+    <script src="events.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

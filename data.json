@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "mayus": "FERNET",
+        "nombre": "Fernet",
+        "precio": 1000,
+        "stock": 10,
+        "oferta": 20,
+        "imagen": "image/fernet-branca.jpg"
+    },
+    {
+        "id": 2,
+        "mayus": "GANCIA",
+        "nombre": "Gancia",
+        "precio": 450,
+        "stock": 1,
+        "oferta": 0,
+        "imagen": "image/gancia.jpg"
+    },
+    {
+        "id": 3,
+        "mayus": "DR LEMON",
+        "nombre": "Dr Lemon",
+        "precio": 300,
+        "stock": 20,
+        "oferta": 10,
+        "imagen": "image/drlemon.jpg"
+    },
+    {
+        "id": 4,
+        "mayus": "JACK DANIELS",
+        "nombre": "Jack Daniel's",
+        "precio": 5000,
+        "stock": 0,
+        "oferta": 0,
+        "imagen": "image/jackdaniels.jpg"
+    },
+    {
+        "id": 5,
+        "mayus": "JOHNNIE WALKER",
+        "nombre": "Johnnie Walker",
+        "precio": 32000,
+        "stock": 6,
+        "oferta": 5,
+        "imagen": "image/johnniewalker.jpg"
+    },
+    {
+        "id": 6,
+        "mayus": "HEINEKEN",
+        "nombre": "Heineken",
+        "precio": 380,
+        "stock": 30,
+        "oferta": 0,
+        "imagen": "image/heineken.jpg"
+    }
+]
