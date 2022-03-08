@@ -82,21 +82,85 @@
             .carrito--imagen{
                 width: 3rem;
             }
+
+            .contadorHtml{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: red;
+                color: white;
+                width: 1.7rem;
+                height: 1.7rem;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+            }
+
+            &:hover{
+                background-color: #d4d4d4;
+                border-radius: 10px;
+                cursor: pointer;
+            }
         }
 
         &__divUsuario{
             position: relative;
             border-radius: 50px;
 
-            .divUsuario__div{
-                @extend %flexRow;
-                justify-content: center;
-                align-items: center;
-
-                &:hover{
-                    cursor: pointer;
+            .divUsuario{
+                &--imagen{
+                    width: 3rem;
+                    height: 3rem;
+                    object-fit: cover;
+                    margin: 0.7rem;
                 }
+
+                &__div{
+                    @extend %flexRow;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 0.6rem;
+
+                    &:hover{
+                        background-color: #d4d4d4;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                &__menu{
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    background-color: white;
+                    width: max-content;
+                    border: black solid 1px;
+
+                    .menu__administrador{
+                        font-size: 1.2rem;
+                        border-radius: 3px;
+                        background-color: #227df3;
+                        color: white;
+                        border: none;
+                        padding: 0.3rem;
+                        margin: 1rem;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: #1d66c5;
+                        }
+                    }
+                }
+
             }
+            
+        }
+
+        .divs{
+            @extend %flexRow;
+            align-items: center;
         }
 
         .divCarrito{
@@ -128,12 +192,217 @@
                     border-bottom: 1px black dotted;
 
                     .imagenListaCarrito{
-                        height: 8rem;
+                        width: 6rem;
+                        height: 6rem;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .errorListaCarrito{
+                background-color: #c4c4c4;
+                color: red;
+                display: none;
+                text-align: center;
+                width: auto;
+            }
+
+            .textoTotal{
+                text-align: right;
+
+                .TOTAL{
+                    border-top: black dotted 2px;
+                }
+            }
+
+            .divBotoneraCarrito{
+                align-self: flex-end;
+                margin-top: 1rem;
+
+                .btnLimpiarCarrito{
+                    @extend %botonDos;
+
+                    &:hover{
+                        @extend %botonDosHover;
+                    }
+                }
+
+                .btnCerrarCarrito{
+                    @extend %botonTres;
+                    margin-left: 0.5rem;
+
+                    &:hover{
+                        @extend %botonTresHover;
+                    }
+                }
+
+                .btnComprarCarrito{
+                    @extend %botonCuatro;
+                    margin-left: 0.5rem;
+
+                    &:hover{
+                        @extend %botonCuatroHover;
+                    }
+
+                    &:disabled{
+                        @extend %botonUnoDisabled;
                     }
                 }
             }
         }
     }
 
+    &__menu{
+        @extend %flexColumn;
+        text-align: center;
+        margin: 1rem;
+        border-bottom: 4px black dotted;
 
+        &__modificar{
+            @extend %flexRow;
+            justify-content: space-evenly;
+            margin: 1rem;
+
+            .menu__modificar{
+                &--agregar{
+                    @extend %flexColumn;
+                    align-items: center;
+
+                    .agregarProducto{
+                        @extend %flexColumn;
+                        align-items: flex-end;
+
+                        .btnAgregar{
+                            @extend %botonUno;
+
+                            &:hover{
+                                @extend %botonUnoHover;
+                            }
+                        }
+                    }
+
+                }
+
+                &--eliminar{
+                    @extend %flexColumn;
+                    align-items: center;
+
+                    .eliminarProducto{
+                        @extend %flexColumn;
+                        align-items: flex-end;
+
+                        &--errorId{
+                            @extend %mensajeError;
+                        }
+
+                        .btnEliminar{
+                            @extend %botonUno;
+
+                            &:hover{
+                                @extend %botonUnoHover;
+                            }
+
+                            &:disabled{
+                                @extend %botonUnoDisabled;
+                            }
+                        }
+                    }
+                }
+
+                &--modificar{
+                    @extend %flexColumn;
+                    align-items: center;
+
+                    .modificarProducto{
+                        @extend %flexColumn;
+                        align-items: flex-end;
+
+                        &--errorId{
+                            @extend %mensajeError;
+                        }
+
+                        .btnModificar{
+                            @extend %botonUno;
+
+                            &:hover{
+                                @extend %botonUnoHover;
+                            }
+
+                            &:disabled{
+                                @extend %botonUnoDisabled;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__botonera{
+        align-self: flex-end;
+        text-align: end;
+
+        .mensajeGuardar{
+            display: none;
+            color: red;
+            background-color: #e2c8c8;
+        }
+
+        .resetearListaProductos{
+            @extend %botonDos;
+
+            &:hover{
+                @extend %botonDosHover;
+            }
+        }
+
+        .cerrar{
+            @extend %botonTres;
+
+            &:hover{
+                @extend %botonTresHover;
+            }
+        }
+
+        .guardar{
+            @extend %botonCuatro;
+
+            &:hover{
+                @extend %botonCuatroHover;
+            }
+        }
+    }
+}
+
+.header__menu input[type="text"], .header__menu input[type="number"]{
+    width: 12rem;
+    height: 1.8rem;
+    border: none;
+    margin: 0.4rem;
+    padding: 0 0.7rem;
+    box-shadow: 0px 0px 5px 0px rgba(31,30,30,0.57) inset;
+    font-size: 1rem;
+}
+
+.header__menu input[type="text"]:focus, .header__menu input[type="number"]:focus{
+    outline: none;
+}
+
+.header__menu input[type="text"]::placeholder, .header__menu input[type="number"]::placeholder{
+    color: #c4c4c4;
+}
+
+.header__menu input[type="text"]:disabled, .header__menu input[type="number"]:disabled{
+    outline: none;
+    background-color: #dadada;
+    color: #a7a7a7;
+}
+
+.btnLimpiar{
+    @extend %botonDos;
+
+    &:hover{
+        @extend %botonDosHover;
+    }
 }

@@ -1,0 +1,18 @@
+.footer{
+    @extend %flexRow;
+    background-color: rgb(37, 37, 37);
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    &__a{
+        @extend %flexRow;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+
+        &--texto{
+            margin: 0.5rem;
+        }
+    }
+}

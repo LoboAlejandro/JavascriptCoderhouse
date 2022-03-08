@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -199,15 +199,15 @@ p{
     display: flex;
     flex-direction: column;
     padding-right: 1rem;
-}
+} */
 
 /*////////////////////////////*/
 
-.imagenListaCarrito{
+/* .imagenListaCarrito{
     height: 8rem;
-}
+} */
 
-.errorListaCarrito{
+/* .errorListaCarrito{
     background-color: #c4c4c4;
     color: red;
     display: none;
@@ -223,9 +223,9 @@ p{
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px black dotted;
-}
+} */
 
-.textoTotal{
+/* .textoTotal{
     text-align: right;
 }
 
@@ -255,17 +255,17 @@ p{
 
 .carrito--imagen{
     width: 3rem;
-}
+} */
 
-.imagenListaCarrito{
+/* .imagenListaCarrito{
     width: 6rem;
     height: 6rem;
     object-fit: cover;
     border-radius: 10px;
-}
+} */
 
 
-.divs{
+/* .divs{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -314,9 +314,9 @@ p{
 .menu__administrador:hover{
     cursor: pointer;
     background-color: #1d66c5;
-}
+} */
 
-.header__menu{
+/* .header__menu{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -353,9 +353,9 @@ p{
     flex-direction: row;
     justify-content: space-evenly;
     margin: 1rem;
-}
+} */
 
-.menu__modificar--agregar{
+/* .menu__modificar--agregar{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,15 +389,15 @@ p{
     display: flex;
     flex-direction: column;
     align-items:flex-end;
-}
+} */
 
-.modificarProducto--errorId, .eliminarProducto--errorId, .errorCantidad, .seleccionarCantidad{
+/* .modificarProducto--errorId, .eliminarProducto--errorId, .errorCantidad, .seleccionarCantidad{
     color: red;
     background-color: rgb(206, 205, 205);
     display: none;
-}
+} */
 
-.btnEliminar, .btnAgregar, .btnModificar{
+/* .btnEliminar, .btnAgregar, .btnModificar{
     width: max-content;
     height: 2rem;
     font-size: 1.2rem;
@@ -411,15 +411,15 @@ p{
 .btnEliminar:hover, .btnAgregar:hover, .btnModificar:hover{
     cursor: pointer;
     background-color: #1d66c5;
-}
+} */
 
-.btnEliminar:disabled, .btnModificar:disabled, .btnComprarCarrito:disabled{
+/* .btnEliminar:disabled, .btnModificar:disabled, .btnComprarCarrito:disabled{
     cursor: default;
     background-color: #dadada;
     color: #a7a7a7;
 }
-
-.btnLimpiar, .btnLimpiarCarrito, .resetearListaProductos{
+ */
+/* .btnLimpiar, .btnLimpiarCarrito, .resetearListaProductos{
     background-color: #abc7ec;
     color: #1f41b1;
     font-size: 0.8rem;
@@ -436,12 +436,12 @@ p{
 .header__botonera{
     align-self: flex-end;
     text-align: end;
-}
+} */
 
-.mensajeGuardar{
+/* .mensajeGuardar{
     display: none;
     color: red;
-    background-color: rgb(226, 200, 200);
+    background-color: #e2c8c8;
 }
 
 .cerrar, .btnCerrarCarrito{
@@ -478,9 +478,9 @@ p{
 .guardar:hover, .btnComprarCarrito:hover{
     cursor: pointer;
     background-color: #168f16;
-}
+} */
 
-.main{
+/* .main{
     margin-top: 4.7rem;
     align-self: center;
     width: 100%;
@@ -581,9 +581,9 @@ p{
 .cantidad:disabled{
     background-color: #dadada;
     color: #a7a7a7;
-}
+} */
 
-.btnComprar{
+/* .btnComprar{
     border-radius: 3px;
     background-color: #227df3;
     color: white;
@@ -602,9 +602,9 @@ p{
     cursor: default;
     background-color: #dadada;
     color: #a7a7a7;
-}
+} */
 
-.footer{
+/* .footer{
     background-color: rgb(37, 37, 37);
     height: 5rem;
     display: flex;
@@ -623,4 +623,4 @@ p{
 
 .footer__a--texto{
     margin: 0.5rem;
-}
+} */

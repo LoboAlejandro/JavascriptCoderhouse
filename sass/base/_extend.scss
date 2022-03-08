@@ -1,9 +1,103 @@
 %flexColumn{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
 }
 
 %flexRow{
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+}
+
+%mensajeError{
+    color: red;
+    background-color: rgb(206, 205, 205);
+    display: none;
+}
+
+%input{
+    width: 12rem;
+    height: 1.8rem;
+    border: none;
+    margin: 0.4rem;
+    padding: 0 0.7rem;
+    box-shadow: 0px 0px 5px 0px rgba(31,30,30,0.57) inset;
+    font-size: 1rem;
+}
+
+%inputFocus{
+    outline: none;
+}
+
+%inputPlaceholder{
+    color: #c4c4c4;
+}
+
+%inputDisabled{
+    outline: none;
+    background-color: #dadada;
+    color: #a7a7a7;
+}
+
+%botonUno{
+    width: max-content;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    background-color: #227df3;
+    color: white;
+    border: none;
+    padding: 0.3rem;
+}
+
+%botonUnoHover{
+    cursor: pointer;
+    background-color: #1d66c5;
+}
+
+%botonUnoDisabled{
+    cursor: default;
+    background-color: #dadada;
+    color: #a7a7a7;
+}
+
+%botonDos{
+    background-color: #abc7ec;
+    color: #1f41b1;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0.3rem;
+}
+
+%botonDosHover{
+    cursor: pointer;
+    background-color: #879ebb;
+}
+
+%botonTres{
+    font-size: 1.2rem;
+    border-radius: 3px;
+    padding: 0.3rem;
+    background-color: #9fc4a7;
+    color: #377225;
+    border: none;
+}
+
+%botonTresHover{
+    cursor: pointer;
+    background-color: #82a189;
+}
+
+%botonCuatro{
+    color:white;
+    background-color: #21b921;
+    font-size: 2rem;
+    border-radius: 3px;
+    border: none;
+    padding: 0.4rem;
+}
+
+%botonCuatroHover{
+    cursor: pointer;
+    background-color: #168f16;
 }

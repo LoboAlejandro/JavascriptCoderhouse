@@ -1,0 +1,127 @@
+.main{
+    @extend %flexColumn;
+    margin-top: 4.7rem;
+    align-self: center;
+    width: 100%;
+    align-items: center;
+
+    &__banner{
+        @extend %flexColumn;
+        background-image: url(../image/banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center left;
+        width: 100%;
+        height: 45vh;
+        justify-content: start;
+        align-items: center;
+
+        &--titulo{
+            margin: 2rem 0;
+            padding: 0 1.5rem;
+            background-color: white;
+            width: fit-content;
+            border-radius: 5px;
+        }
+    }
+
+    &__productos{
+        @extend %flexRow;
+        background-color: white;
+        border-radius: 5px;
+        width: 90%;
+        height: fit-content;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+        padding: 2rem 0;
+
+        &__error{
+            display: none;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        article{
+            @extend %flexColumn;
+            box-shadow: 0px 0px 10px 0px rgba(31,30,30,0.57);
+            width: 15rem;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1rem;
+            padding: 1.1rem;
+            border-radius: 8px;
+            position: relative;
+
+            .cartelOferta{
+                background-color: red;
+                color: white;
+                width: fit-content;
+                padding: 0 0.5rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 8px 0 0 0;
+            }
+
+            .imagen{
+                width: 12rem;
+                height: 12rem;
+                object-fit: cover;
+            }
+
+            .precio--antes{
+                color: gray;
+                font-style: oblique;
+                text-decoration: line-through;
+            }
+
+            .textoStock{
+                text-align: center;
+                color: red;
+                font-size: 1rem;
+            }
+            
+            .cantidad{
+                font-size: 1.2rem;
+                width: 2.5rem;
+                padding-left: 0.3rem;
+
+                &:disabled{
+                    background-color: #dadada;
+                    color: #a7a7a7;
+                }
+            }
+
+            .errorCantidad{
+                @extend %mensajeError;
+            }
+
+            .seleccionarCantidad{
+                @extend %mensajeError;
+            }
+
+            .btnComprar{
+                border-radius: 3px;
+                background-color: #227df3;
+                color: white;
+                border: none;
+                font-size: 1.4rem;
+                padding: 0.3rem;
+                margin: 0.5rem;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: #1d66c5;
+                }
+
+                &:disabled{
+                    cursor: default;
+                    background-color: #dadada;
+                    color: #a7a7a7;
+                }
+            }
+        }
+    }
+}
