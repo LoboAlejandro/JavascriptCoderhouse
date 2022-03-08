@@ -107,6 +107,20 @@ function construirCarrito(){
         e.preventDefault();
         $('.divCarrito').hide();
     });
+
+    // $('.btnComprarCarrito').click((e) =>{
+    //     e.preventDefault();
+    //     $('body').prepend('<div class="divCompraFondo"></div>');
+    //     $('body').remove('.divCompraFondo');
+    //     $('body').prepend(`<div class="divCompraFondo"><div class="divCompraRealizada"><h2>Ha ocurrido un error, sus $${TOTAL.toFixed(2)} NO hay sido descontados. Sepa disculpar las molestias ocasionadas, estamos trabajando en ello.</h2></div></div>`);
+    //     $('.divCompraFondo').show();
+    //     $('.divCompraRealizada').append('<button class="cerrarCompraRealizada">Cerrar</button>');
+
+    //     $('.cerrarCompraRealizada').click((e) =>{
+    //         e.preventDefault();
+    //         $('.divCompraFondo').hide();
+    //     })
+    // })
 }
 
 //Funcion para generar la lista de cada producto en el carrito.
