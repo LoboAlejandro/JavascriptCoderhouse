@@ -84,7 +84,7 @@ p{
 }
 
 .imagen{
-    width: 10rem;
+    width: 12rem;
     height: 12rem;
     object-fit: cover;
 }
@@ -116,7 +116,7 @@ p{
 }
 
 .buscador{
-    width: 34rem;
+    width: 50vw;
     height: 2.5rem;
     border: none;
     border-radius: 2px 0 0 2px;
@@ -186,8 +186,11 @@ p{
     position: absolute;
     top: 4rem;
     right: 0;
-    width: 50rem;
-    height: 40rem;
+    width: fit-content;
+    min-width: 40rem;
+    height: fit-content;
+    min-height: 10vh;
+    max-height: 80vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -200,6 +203,7 @@ p{
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    padding-right: 1rem;
 }
 
 .imagenListaCarrito{
@@ -219,6 +223,9 @@ p{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px black dotted;
 }
 
 .textoTotal{
@@ -252,6 +259,14 @@ p{
 .carrito--imagen{
     width: 3rem;
 }
+
+.imagenListaCarrito{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 
 .divs{
     display: flex;
@@ -407,7 +422,7 @@ p{
     color: #a7a7a7;
 }
 
-.btnLimpiar, .btnLimpiarCarrito{
+.btnLimpiar, .btnLimpiarCarrito, .resetearListaProductos{
     background-color: #abc7ec;
     color: #1f41b1;
     font-size: 0.8rem;
@@ -416,7 +431,7 @@ p{
     padding: 0.3rem;
 }
 
-.btnLimpiar:hover, .btnLimpiarCarrito:hover{
+.btnLimpiar:hover, .btnLimpiarCarrito:hover, .resetearListaProductos:hover{
     cursor: pointer;
     background-color: #879ebb;
 }
@@ -545,6 +560,7 @@ p{
 .precio--antes{
     color: gray;
     font-style: oblique;
+    text-decoration: line-through;
 }
 
 .textoStock{

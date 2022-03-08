@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "mayus": "FERNET",
-        "nombre": "Fernet",
+        "mayus": "FERNET BRANCA",
+        "nombre": "Fernet Branca",
         "precio": 1000,
         "stock": 10,
         "oferta": 20,
@@ -10,21 +10,21 @@
     },
     {
         "id": 2,
+        "mayus": "FERNET 1882",
+        "nombre": "Fernet 1882",
+        "precio": 560,
+        "stock": 100,
+        "oferta": 0,
+        "imagen": "image/fernet-1882.jpg"
+    },
+    {
+        "id": 3,
         "mayus": "GANCIA",
         "nombre": "Gancia",
         "precio": 450,
         "stock": 1,
         "oferta": 0,
         "imagen": "image/gancia.jpg"
-    },
-    {
-        "id": 3,
-        "mayus": "DR LEMON",
-        "nombre": "Dr Lemon",
-        "precio": 300,
-        "stock": 20,
-        "oferta": 10,
-        "imagen": "image/drlemon.jpg"
     },
     {
         "id": 4,
@@ -37,6 +37,15 @@
     },
     {
         "id": 5,
+        "mayus": "JACK DANIELS HONEY",
+        "nombre": "Jack Daniel's Honey",
+        "precio": 6000,
+        "stock": 30,
+        "oferta": 10,
+        "imagen": "image/jackdanielshoney.jpg"
+    },
+    {
+        "id": 6,
         "mayus": "JOHNNIE WALKER",
         "nombre": "Johnnie Walker",
         "precio": 32000,
@@ -45,12 +54,111 @@
         "imagen": "image/johnniewalker.jpg"
     },
     {
-        "id": 6,
+        "id": 7,
+        "mayus": "BAILEYS",
+        "nombre": "Bailey's",
+        "precio": 3000,
+        "stock": 50,
+        "oferta": 20,
+        "imagen": "image/baileys.jpg"
+    },
+    {
+        "id": 8,
+        "mayus": "JAGERMEISTER",
+        "nombre": "Jagermeister",
+        "precio": 3000,
+        "stock": 8,
+        "oferta": 0,
+        "imagen": "image/jagermeister.jpg"
+    },
+    {
+        "id": 9,
+        "mayus": "ABSOLUT",
+        "nombre": "Absolut",
+        "precio": 2600,
+        "stock": 20,
+        "oferta": 0,
+        "imagen": "image/absolut.jpg"
+    },
+    {
+        "id": 10,
+        "mayus": "SKYY",
+        "nombre": "Skyy",
+        "precio": 950,
+        "stock": 60,
+        "oferta": 0,
+        "imagen": "image/skyy.jpg"
+    },
+    {
+        "id": 11,
+        "mayus": "SMIRNOFF",
+        "nombre": "Smirnoff",
+        "precio": 1000,
+        "stock": 100,
+        "oferta": 20,
+        "imagen": "image/smirnoff.jpg"
+    },
+    {
+        "id": 12,
+        "mayus": "CAMPARI",
+        "nombre": "Campari",
+        "precio": 650,
+        "stock": 20,
+        "oferta": 0,
+        "imagen": "image/campari.jpg"
+    },
+    {
+        "id": 13,
+        "mayus": "DR LEMON",
+        "nombre": "Dr Lemon",
+        "precio": 300,
+        "stock": 20,
+        "oferta": 10,
+        "imagen": "image/drlemon.jpg"
+    },
+    {
+        "id": 14,
         "mayus": "HEINEKEN",
         "nombre": "Heineken",
         "precio": 380,
         "stock": 30,
         "oferta": 0,
         "imagen": "image/heineken.jpg"
+    },
+    {
+        "id": 15,
+        "mayus": "BUDWEISER",
+        "nombre": "Budweiser",
+        "precio": 250,
+        "stock": 300,
+        "oferta": 0,
+        "imagen": "image/budweiser.jpg"
+    },
+    {
+        "id": 16,
+        "mayus": "CORONA",
+        "nombre": "Corona",
+        "precio": 200,
+        "stock": 300,
+        "oferta": 0,
+        "imagen": "image/corona.jpg"
+    },
+    {
+        "id": 17,
+        "mayus": "BRAHMA",
+        "nombre": "Brahma",
+        "precio": 250,
+        "stock": 300,
+        "oferta": 0,
+        "imagen": "image/brahma.jpg"
+    },
+    {
+        "id": 18,
+        "mayus": "QUILMES",
+        "nombre": "Quilmes",
+        "precio": 290,
+        "stock": 0,
+        "oferta": 0,
+        "imagen": "image/quilmes.jpg"
     }
 ]

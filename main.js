@@ -7,8 +7,13 @@ $('.divCarrito').hide();
 
 $(document).ready(() =>{
     //llamo a función para validar edad.
-    alerta()
-    
+    alerta();
+    //llamo a la funcion para leer el .json y luego recorrer los datos
+    getInicio();
+});
+
+//Creo esta funcion para luego llamarla al limpiar el localstorage
+function getInicio(){
     //llamo al archivo .json y si se cumple, envia la variable a la funcion para recorrer los datos
     $.get("data.json",function (respuesta, estado) {
         if(estado === "success"){
@@ -16,7 +21,7 @@ $(document).ready(() =>{
             jsonReader(respuesta);
         }
     });
-});
+}
 
 //Genero una lista para guardar datos y luego leerla
 this.lista= [];
@@ -48,7 +53,7 @@ function jsonReader(respuesta){
 //funcion para inicializar el programa
 function initLista(){
     //Comparo datos que hay en el localStorage, si es null o undefined, cargo la lista que tengo hasta el momento, sino, cargo los datos que estén dentro del localStorage.
-    const tempLista= JSON.parse(localStorage.getItem(PRODUCTOS));
+    tempLista= JSON.parse(localStorage.getItem(PRODUCTOS));
     if(tempLista == null || tempLista == undefined){
         localStorage.setItem(PRODUCTOS, JSON.stringify(lista));
     }else{

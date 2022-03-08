@@ -62,6 +62,19 @@ $('.posicion').keyup(function (e) {
     }
 });
 
+$('.resetearListaProductos').click(function (e) {
+    e.preventDefault();
+    // //Actualizo la lista del storage
+    // tempLista= null;
+    //Elimino el HTML de productos generado y lo inicializo con los datos actualizados
+    localStorage.clear();
+    lista= [];
+    $('.main__productos').remove();
+    $('.main').append(`<section class="main__productos"></section>`);
+    getInicio();
+    // initLista();
+})
+
 //función para guardar la informacion mediante un boton
 $('.guardar').click(function (e) { 
     e.preventDefault();
@@ -100,12 +113,13 @@ $('.cerrar').click((e)=>{
     $('.header__menu').slideUp();
 });
 
-
+//Función para generar carrito y actualizar datos mediante un boton
 let totalProductosCarrito= 0;
 $('.carrito--imagen').click((e) =>{
     e.preventDefault();
+    //llamo a la funcion para construir el carrito
     construirCarrito();
-    
+    //Genero un botón para limpiar la lista del carrito y actualizarlo
     $('.btnLimpiarCarrito').click((e) => {
         e.preventDefault();
         listaCarrito= [];
