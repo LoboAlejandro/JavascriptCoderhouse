@@ -147,7 +147,7 @@
         "id": 17,
         "mayus": "BRAHMA",
         "nombre": "Brahma",
-        "precio": 250,
+        "precio": 290,
         "stock": 300,
         "oferta": 0,
         "imagen": "image/brahma.jpg"
@@ -156,7 +156,7 @@
         "id": 18,
         "mayus": "QUILMES",
         "nombre": "Quilmes",
-        "precio": 290,
+        "precio": 250,
         "stock": 0,
         "oferta": 0,
         "imagen": "image/quilmes.jpg"
