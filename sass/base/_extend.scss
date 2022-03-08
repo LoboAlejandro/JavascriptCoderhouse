@@ -1,0 +1,9 @@
+%flexColumn{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+%flexRow{
+    display: flex;
+    flex-flow: column;
+}

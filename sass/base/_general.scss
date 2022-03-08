@@ -5,3 +5,70 @@
     text-decoration: none;
     list-style: none;
 }
+
+body{
+    background-color: #e7e6e6;
+    @extend %flexColumn;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+.divPrincipal{
+    position: fixed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+}
+
+.divHijo{
+    width: 35vw;
+    height: 25vh;
+    @extend %flexColumn;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.advertencia{
+    color: red;
+    background-color: rgb(226, 200, 200);
+}
+
+.divBoton button{
+    background-color: #d6d4d4;
+    width: 4rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: dotted 2px black;
+    padding: 0.3rem;
+}
+
+.divBoton button:hover{
+    background-color: #b8b3b3;
+    cursor: pointer;
+}
+
+.divBoton{
+    @extend %flexRow;
+    justify-content: space-evenly;
+}

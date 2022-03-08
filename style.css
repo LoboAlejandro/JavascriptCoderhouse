@@ -75,18 +75,13 @@ p{
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .div__a--imagen{
     width: 6rem;
     height: 3rem;
     object-fit: cover;
     margin: 0.7rem;
     border-radius: 3px;
-}
-
-.imagen{
-    width: 12rem;
-    height: 12rem;
-    object-fit: cover;
 }
 
 .header{
@@ -205,6 +200,8 @@ p{
     flex-direction: column;
     padding-right: 1rem;
 }
+
+/*////////////////////////////*/
 
 .imagenListaCarrito{
     height: 8rem;
@@ -555,6 +552,12 @@ p{
     top: 0;
     left: 0;
     border-radius: 8px 0 0 0;
+}
+
+.imagen{
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
 }
 
 .precio--antes{
