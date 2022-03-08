@@ -1,3 +1,4 @@
+//Función para que realice la busqueda de un producto cada vez que se levanta una tecla mediante un input
 $('.buscador').keyup(function (e) { 
     e.preventDefault();
     //Cada vez que se actualiza el input se oculta mensaje de error
@@ -62,20 +63,25 @@ $('.posicion').keyup(function (e) {
     }
 });
 
+
+//Funcion para resetear los objetos por defecto mediante un boton
 $('.resetearListaProductos').click(function (e) {
     e.preventDefault();
     // //Actualizo la lista del storage
-    // tempLista= null;
-    //Elimino el HTML de productos generado y lo inicializo con los datos actualizados
     localStorage.clear();
     lista= [];
+    //Actualizo la lista del carrito para evitar conflictos con productos reseteados.
+    listaCarrito=[];
+    //Elimino el HTML de productos generado y lo inicializo con los datos actualizados
     $('.main__productos').remove();
     $('.main').append(`<section class="main__productos"></section>`);
+    //Llamo a la funcion para leer el .json y generar html en base a eso.
     getInicio();
-    // initLista();
+    //Llamo a la funcion para actualizar contador del carrito
+    contadorItemsCarrito();
 })
 
-//función para guardar la informacion mediante un boton
+//Función para guardar la informacion mediante un boton
 $('.guardar').click(function (e) { 
     e.preventDefault();
     //Actualizo la lista del storage

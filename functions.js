@@ -98,7 +98,7 @@ function generarHtml(dato){
     $(article).append(`<p class="seleccionarCantidad seleccionarCantidad--${dato.id}">Seleccione cantidad</p>`);
     $(article).append(`<p class="errorCantidad errorCantidad--${dato.id}">Cantidad maxima excedida</p>`);
     (article).appendChild(btnComprar);
-    
+    //Funcion para enviar informacion sobre la compra en el caso de que este habilitada, envia cuanta cantidad y que producto es.
     $(`.btnComprar--${dato.id}`).click(function (e) {
         e.preventDefault();
         let cantidadCopia= document.querySelector(`.cantidad--${dato.id}`).value;
