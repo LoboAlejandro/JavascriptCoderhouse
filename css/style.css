@@ -445,3 +445,19 @@ body, .divHijo, .divCompraRealizada, .header, .header__nav .divCarrito, .header_
     align-items: center; }
     .footer__a--texto {
       margin: 0.5rem; }
+
+@media only screen and (max-width: 850px) {
+  .header__nav__div {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 0; }
+  .buscador {
+    width: 100rem; }
+  .btnBuscador {
+    right: 0; }
+  .divs {
+    align-items: flex-start;
+    justify-content: flex-start; }
+  .header__menu__modificar {
+    flex-direction: column; } }
